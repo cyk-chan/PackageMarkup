@@ -3,6 +3,7 @@ public class MarkupVisitor {
       this.projectPrice = projectPrice;
    }
 
+   //Special case to calculate the Flat Markup
    public void visit(FlatMarkup markup) {
       totalMarkup += (projectPrice+totalMarkup) * markup.getMarkupRate(); 
        

@@ -7,6 +7,9 @@ public class PackageProject {
       this.markups = new ArrayList<Visitable>();
     }
 
+ 
+    //Calculates the total project cost (base + markup)
+
     public double calculateProjectCost() {
 
       MarkupVisitor visitor = new MarkupVisitor(baseCost);
